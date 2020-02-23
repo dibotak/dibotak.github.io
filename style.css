@@ -1,63 +1,134 @@
-*{
+@import url('https://fonts.googleapis.com/css?family=Rancho|Ubuntu:500&display=swap');
+
+body {
+  box-sizing: border-box;
   margin: 0;
-}
-
-.contain{
-  background: linear-gradient(219deg, rgba(246, 246, 246, 0.02) 0%, rgba(246, 246, 246, 0.02) 20%,rgba(225, 225, 225, 0.02) 20%, rgba(225, 225, 225, 0.02) 40%,rgba(136, 136, 136, 0.02) 40%, rgba(136, 136, 136, 0.02) 60%,rgba(216, 216, 216, 0.02) 60%, rgba(216, 216, 216, 0.02) 80%,rgba(35, 35, 35, 0.02) 80%, rgba(35, 35, 35, 0.02) 100%),linear-gradient(299deg, rgba(213, 213, 213, 0.02) 0%, rgba(213, 213, 213, 0.02) 20%,rgba(150, 150, 150, 0.02) 20%, rgba(150, 150, 150, 0.02) 40%,rgba(161, 161, 161, 0.02) 40%, rgba(161, 161, 161, 0.02) 60%,rgba(186, 186, 186, 0.02) 60%, rgba(186, 186, 186, 0.02) 80%,rgba(28, 28, 28, 0.02) 80%, rgba(28, 28, 28, 0.02) 100%),linear-gradient(50deg, rgba(157, 157, 157, 0.02) 0%, rgba(157, 157, 157, 0.02) 16.667%,rgba(147, 147, 147, 0.02) 16.667%, rgba(147, 147, 147, 0.02) 33.334%,rgba(42, 42, 42, 0.02) 33.334%, rgba(42, 42, 42, 0.02) 50.001000000000005%,rgba(214, 214, 214, 0.02) 50.001%, rgba(214, 214, 214, 0.02) 66.668%,rgba(34, 34, 34, 0.02) 66.668%, rgba(34, 34, 34, 0.02) 83.33500000000001%,rgba(211, 211, 211, 0.02) 83.335%, rgba(211, 211, 211, 0.02) 100.002%),linear-gradient(278deg, rgba(79, 79, 79, 0.03) 0%, rgba(79, 79, 79, 0.03) 20%,rgba(217, 217, 217, 0.03) 20%, rgba(217, 217, 217, 0.03) 40%,rgba(5, 5, 5, 0.03) 40%, rgba(5, 5, 5, 0.03) 60%,rgba(200, 200, 200, 0.03) 60%, rgba(200, 200, 200, 0.03) 80%,rgba(125, 125, 125, 0.03) 80%, rgba(125, 125, 125, 0.03) 100%),linear-gradient(274deg, rgba(235, 235, 235, 0.03) 0%, rgba(235, 235, 235, 0.03) 12.5%,rgba(100, 100, 100, 0.03) 12.5%, rgba(100, 100, 100, 0.03) 25%,rgba(44, 44, 44, 0.03) 25%, rgba(44, 44, 44, 0.03) 37.5%,rgba(228, 228, 228, 0.03) 37.5%, rgba(228, 228, 228, 0.03) 50%,rgba(36, 36, 36, 0.03) 50%, rgba(36, 36, 36, 0.03) 62.5%,rgba(72, 72, 72, 0.03) 62.5%, rgba(72, 72, 72, 0.03) 75%,rgba(30, 30, 30, 0.03) 75%, rgba(30, 30, 30, 0.03) 87.5%,rgba(109, 109, 109, 0.03) 87.5%, rgba(109, 109, 109, 0.03) 100%),linear-gradient(90deg, hsl(28,0%,14%),hsl(28,0%,14%));
-}
-
-.container{
-  width: 500px;
-  margin: 0 auto;
+  padding: 0;
+  background-color: #1b262c;
+  color: #fef6fb;
   font-family: "Ubuntu", sans-serif;
 }
 
-#tops{
-  padding-top: 200px;
+li, a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fef6fb;
 }
 
-.header{
-  background: linear-gradient(215deg, rgba(156, 156, 156, 0.03) 0%, rgba(156, 156, 156, 0.03) 50%,rgba(20, 20, 20, 0.03) 50%, rgba(20, 20, 20, 0.03) 100%),linear-gradient(107deg, rgba(179, 179, 179, 0.03) 0%, rgba(179, 179, 179, 0.03) 50%,rgba(7, 7, 7, 0.03) 50%, rgba(7, 7, 7, 0.03) 100%),linear-gradient(25deg, rgba(30, 30, 30, 0.01) 0%, rgba(30, 30, 30, 0.01) 50%,rgba(165, 165, 165, 0.01) 50%, rgba(165, 165, 165, 0.01) 100%),linear-gradient(146deg, rgba(54, 54, 54, 0.03) 0%, rgba(54, 54, 54, 0.03) 50%,rgba(246, 246, 246, 0.03) 50%, rgba(246, 246, 246, 0.03) 100%),linear-gradient(225deg, rgba(8, 8, 8, 0.01) 0%, rgba(8, 8, 8, 0.01) 50%,rgba(133, 133, 133, 0.01) 50%, rgba(133, 133, 133, 0.01) 100%),linear-gradient(38deg, rgba(57, 57, 57, 0.02) 0%, rgba(57, 57, 57, 0.02) 50%,rgba(196, 196, 196, 0.02) 50%, rgba(196, 196, 196, 0.02) 100%),linear-gradient(122deg, rgba(115, 115, 115, 0.02) 0%, rgba(115, 115, 115, 0.02) 50%,rgba(101, 101, 101, 0.02) 50%, rgba(101, 101, 101, 0.02) 100%),linear-gradient(154deg, rgba(217, 217, 217, 0.01) 0%, rgba(217, 217, 217, 0.01) 50%,rgba(126, 126, 126, 0.01) 50%, rgba(126, 126, 126, 0.01) 100%),linear-gradient(144deg, rgba(204, 204, 204, 0.01) 0%, rgba(204, 204, 204, 0.01) 50%,rgba(139, 139, 139, 0.01) 50%, rgba(139, 139, 139, 0.01) 100%),linear-gradient(90deg, rgb(0, 2, 29),rgb(4, 150, 89));
-  color: white;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+.logo a {
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.logo img {
+  width: 25px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar a {
+  padding: 10px 20px;
+}
+
+.navbar a:hover {
+  background-color: #3282b8;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 50px
+}
+
+section {
+  border: 3px solid #0f4c75;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  display: block;
+}
+
+h3 {
+  color: #bbe1fa;
+}
+
+p {
+  color: #fef6fb;
+}
+
+.heads {
+  background-color: #3282b8;
+  text-align: center;
   padding: 10px;
 }
 
-.header a{
-  text-decoration: none;
-  display: block;
-  color: white;
+.heads h1 {
+  font-family: 'Rancho', sans-serif;
 }
 
-.menu ul{
-  margin: 25px auto;
-  padding: 0;
+.content {
+  height: 400px;
+  width: 70%;
+  vertical-align: auto;
+  float: left;
 }
 
-.menu ul li{
-  display: block;
-  position: relative;
-}
-
-.menu ul li a{
-  display: block;
-  padding: 10px 0;
+.sidebar {
+  width: 25%;
+  float: right;
   text-align: center;
-  text-decoration: none;
-  color: #f1f2f6;
 }
 
-.menu ul li a:hover{
-  background-color: #f1f2f6;
-  color: #10ac84
+.sidebar h3 {
+  text-align: left;
 }
 
-.footer{
-  background-color: #222f3e;
-  color: #f1f2f6;
-  padding: 10px 10px;
-  text-align: right;
+.sidebar li {
+  list-style-type: none;
+  display: list-item;
+  margin: 0;
+  padding: 5px 2px;
+  text-align: left;
 }
 
-#bots{
-  padding-top: 200px;
+.sidebar a {
+  text-decoration: underline;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 15px;
+  background-color: #0f4c75;
+}
+
+form {
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+input {
+  width: 500px;
+}
+
+input.send {
+  height: 30px;
+  font-weight: bold;
+}
+
+.about {
+  width: 600px;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: justify;
 }
